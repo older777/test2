@@ -41,7 +41,7 @@ int main() {
 	printf(	"i = %s\n"
 			"a = %s\n"
 			"n = %s\n\n\n", bufi, bufa, bufn );
-	n = (a >> 1) ^ i;
+	n = (a >> 1) & i;
 
 	strcpy(bufi, byte_to_binary(i));
 	strcpy(bufa, byte_to_binary(a));
