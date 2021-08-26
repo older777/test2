@@ -30,6 +30,7 @@ int main() {
 	u_int8_t i = 0b11100001, n = 0, a = 0b11110000;
 	char bufi[9], bufa[9], bufn[9];
 	char input;
+	int x;
 
 	memset(bufi, 0x00, 9);
 	memset(bufa, 0x00, 9);
@@ -45,7 +46,8 @@ int main() {
 
 	printf("input code. 1 - &, 2 - >>, 3 - ^, 4 - ~\n");
 
-	while ((input = getchar()) != EOF){
+	for (x = 0; x<5; x++){
+		input = getchar();
 		switch (input){
 			case '1': n = i & a; break;
 			case '2': n = i >> a; break;
@@ -54,7 +56,7 @@ int main() {
 			case '\n': continue; break;
 			default: printf("error of code\n"); break;
 		}
-
+		getchar();
 
 		strcpy(bufi, byte_to_binary(i));
 		strcpy(bufa, byte_to_binary(a));
