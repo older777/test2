@@ -52,6 +52,6 @@ int main() {
 			"a = %s\n"
 			"n = %s\n\n\n", bufi, bufa, bufn );
 
-	return 0;
+	return 1;
 
 }
