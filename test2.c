@@ -44,6 +44,8 @@ int main() {
 			"a = %s\n"
 			"n = %s\n\n\n", bufi, bufa, bufn );
 
+	println("");
+	
 	printf("input code. 1 - &, 2 - >>, 3 - ^, 4 - ~\n");
 
 	for (x = 0; x<5; x++){
